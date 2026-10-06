@@ -1,0 +1,173 @@
+#usda 1.0
+(
+    upAxis = "Z"
+)
+
+def Xform "World"
+{
+    def Xform "Factory"
+    {
+        def Xform "Rack01"
+        {
+            def Xform "Structure"
+            {
+                def Cube "Post1"
+                {
+                    color3f[] primvars:displayColor = [(0.2, 0.25, 0.35)]
+                    float3 xformOp:scale = (0.15, 0.15, 2)
+                    double3 xformOp:translate = (-2.5, -0.8, 2)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+                }
+
+                def Cube "Post2"
+                {
+                    color3f[] primvars:displayColor = [(0.2, 0.25, 0.35)]
+                    float3 xformOp:scale = (0.15, 0.15, 2)
+                    double3 xformOp:translate = (-2.5, 0.8, 2)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+                }
+
+                def Cube "Post3"
+                {
+                    color3f[] primvars:displayColor = [(0.2, 0.25, 0.35)]
+                    float3 xformOp:scale = (0.15, 0.15, 2)
+                    double3 xformOp:translate = (2.5, -0.8, 2)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+                }
+
+                def Cube "Post4"
+                {
+                    color3f[] primvars:displayColor = [(0.2, 0.25, 0.35)]
+                    float3 xformOp:scale = (0.15, 0.15, 2)
+                    double3 xformOp:translate = (2.5, 0.8, 2)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+                }
+            }
+
+            def Xform "Shelves"
+            {
+                def Cube "Shelf1"
+                {
+                    color3f[] primvars:displayColor = [(0.95, 0.45, 0.1)]
+                    float3 xformOp:scale = (2.4, 0.75, 0.1)
+                    double3 xformOp:translate = (0, 0, 0.5)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+                }
+
+                def Cube "Shelf2"
+                {
+                    color3f[] primvars:displayColor = [(0.95, 0.45, 0.1)]
+                    float3 xformOp:scale = (2.4, 0.75, 0.1)
+                    double3 xformOp:translate = (0, 0, 2)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+                }
+
+                def Cube "Shelf3"
+                {
+                    color3f[] primvars:displayColor = [(0.95, 0.45, 0.1)]
+                    float3 xformOp:scale = (2.4, 0.75, 0.1)
+                    double3 xformOp:translate = (0, 0, 3.5)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+                }
+            }
+
+            def Xform "Beams"
+            {
+                def Cube "Beam1"
+                {
+                    color3f[] primvars:displayColor = [(0.95, 0.45, 0.1)]
+                    float3 xformOp:scale = (2.4, 0.08, 0.15)
+                    double3 xformOp:translate = (0, -0.8, 0.5)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+                }
+
+                def Cube "Beam2"
+                {
+                    color3f[] primvars:displayColor = [(0.95, 0.45, 0.1)]
+                    float3 xformOp:scale = (2.4, 0.08, 0.15)
+                    double3 xformOp:translate = (0, 0.8, 0.5)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+                }
+
+                def Cube "Beam3"
+                {
+                    color3f[] primvars:displayColor = [(0.95, 0.45, 0.1)]
+                    float3 xformOp:scale = (2.4, 0.08, 0.15)
+                    double3 xformOp:translate = (0, -0.8, 2)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+                }
+
+                def Cube "Beam4"
+                {
+                    color3f[] primvars:displayColor = [(0.95, 0.45, 0.1)]
+                    float3 xformOp:scale = (2.4, 0.08, 0.15)
+                    double3 xformOp:translate = (0, 0.8, 2)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+                }
+
+                def Cube "Beam5"
+                {
+                    color3f[] primvars:displayColor = [(0.95, 0.45, 0.1)]
+                    float3 xformOp:scale = (2.4, 0.08, 0.15)
+                    double3 xformOp:translate = (0, -0.8, 3.5)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+                }
+
+                def Cube "Beam6"
+                {
+                    color3f[] primvars:displayColor = [(0.95, 0.45, 0.1)]
+                    float3 xformOp:scale = (2.4, 0.08, 0.15)
+                    double3 xformOp:translate = (0, 0.8, 3.5)
+                    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+                }
+            }
+
+            def Xform "Pallets"
+            {
+                def Xform "Pallet01"
+                {
+                    def Cube "Deck"
+                    {
+                        color3f[] primvars:displayColor = [(0.76, 0.62, 0.4)]
+                        float3 xformOp:scale = (0.8, 0.6, 0.08)
+                        double3 xformOp:translate = (-1.1, 0, 0.75)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+                    }
+
+                    def Cube "Block1"
+                    {
+                        color3f[] primvars:displayColor = [(0.76, 0.62, 0.4)]
+                        float3 xformOp:scale = (0.18, 0.5, 0.12)
+                        double3 xformOp:translate = (-1.7, 0, 0.55)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+                    }
+
+                    def Cube "Block2"
+                    {
+                        color3f[] primvars:displayColor = [(0.76, 0.62, 0.4)]
+                        float3 xformOp:scale = (0.18, 0.5, 0.12)
+                        double3 xformOp:translate = (-1.1, 0, 0.55)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+                    }
+
+                    def Cube "Block3"
+                    {
+                        color3f[] primvars:displayColor = [(0.76, 0.62, 0.4)]
+                        float3 xformOp:scale = (0.18, 0.5, 0.12)
+                        double3 xformOp:translate = (-0.5, 0, 0.55)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+                    }
+
+                    def Cube "Box01"
+                    {
+                        color3f[] primvars:displayColor = [(0.72, 0.52, 0.3)]
+                        float3 xformOp:scale = (0.45, 0.45, 0.25)
+                        double3 xformOp:translate = (-1.1, 0, 1)
+                        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:scale"]
+                    }
+                }
+            }
+        }
+    }
+}
+
