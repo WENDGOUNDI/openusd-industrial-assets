@@ -1,0 +1,1 @@
+# openusd-industrial-assets
